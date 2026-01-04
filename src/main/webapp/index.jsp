@@ -26,7 +26,10 @@
         <p> Get your own personal hello by filling out and submitting this form. </p>
         <s:form action="hello">
             <s:textfield name="userName" label="Your name"/>
+            <s:textarea name="description" label="Description"/>
             <s:submit value="Submit" />
         </s:form>
+        
+        <p><a href="register.action">Please register</a> for our prize drawing.</p>
     </body>
 </html>

@@ -18,5 +18,9 @@
         <p><a href="index.action">Go to index</a></p>
 
         <p>I have said hello <s:property value="helloCount" /> times!</p>
+        
+        <p>Call to the messageStore toString method:  <s:property value="messageStore"/>
+            
+        <p>Call to message <s:property value="message" /> AND <s:property value="description" /></p>
     </body>
 </html>

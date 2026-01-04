@@ -1,4 +1,6 @@
+controllers\Register.class
 controllers\HelloWorldAction.class
 model\MessageStore.class
 com\mycompany\basic_struts\resources\JakartaEE11Resource.class
 com\mycompany\basic_struts\JakartaRestConfiguration.class
+model\Person.class

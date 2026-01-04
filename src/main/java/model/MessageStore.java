@@ -6,10 +6,15 @@ public class MessageStore {
     private String message;
     
     public MessageStore() {
-        message = "Hello Struts User Ñandúç!";
+        message = "Hello Struts User:  ";
     }
 
     public String getMessage() {
         return message;
+    }
+    
+    @Override
+    public String toString(){
+        return message + " (altered in the toString method)";
     }
 }
