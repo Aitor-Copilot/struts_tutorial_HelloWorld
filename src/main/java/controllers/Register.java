@@ -45,4 +45,22 @@ public class Register extends ActionSupport {
         personBean = person;
     }
 
+    @Override
+    public void validate(){
+        if(personBean == null){
+            personBean = new Person();
+        }
+        else{
+
+            if(personBean.getFirstName().length() == 0){
+                addFieldError("personBean.firstName", "First name is required");
+            }
+            if(personBean.getLastName().length() == 0){
+                addFieldError("personBean.lastName", "Last name is required");
+            }
+            if(personBean.getAge() < 18){
+                addFieldError("personBean.age", "You must be older than 18 to register");
+            }
+        }
+    }
 }
