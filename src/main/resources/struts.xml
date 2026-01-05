@@ -5,11 +5,14 @@
 <struts>
 
     <constant name="struts.devMode" value="true" />
+    <constant name="struts.custom.i18n.resources" value="globalStruts" />
 
     <package name="basicstruts2" extends="struts-default">
-        <action name="index">
-            <result>/index.jsp</result>
+        
+        <action name="index" class="controllers.IndexAction" method="execute">
+            <result name="success">/index.jsp</result>
         </action>
+        
         <action name="hello" class="controllers.HelloWorldAction" method="execute">
             <result name="success">/HelloWorld.jsp</result>
         </action>
@@ -18,6 +21,11 @@
             <result name="input">/register.jsp</result>
             <result name="success">/thankyou.jsp</result>
         </action>
+  
+        <action name="registerInput" class="controllers.Register">
+            <result name="input">/register.jsp</result>
+        </action>      
+
     </package>
     
 

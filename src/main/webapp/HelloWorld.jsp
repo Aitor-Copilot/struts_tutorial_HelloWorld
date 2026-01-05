@@ -7,6 +7,7 @@
         <title>Hello World Ñandúç!</title>
     </head>
     <body>
+        
         <!-- Solution 1: Direct property from action (works) -->
         <h2><s:property value="message" /></h2>
 
@@ -22,5 +23,11 @@
         <p>Call to the messageStore toString method:  <s:property value="messageStore"/>
             
         <p>Call to message <s:property value="message" /> AND <s:property value="description" /></p>
+        
+        <h1><s:text name="greeting" /></h1>
+
+        <hr />
+        <s:text name="contact" />
+        
     </body>
 </html>

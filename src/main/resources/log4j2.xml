@@ -9,6 +9,8 @@
         <Logger name="org.apache.struts2" level="debug"/>
         <Logger name="ognl" level="debug"/>
         <Logger name="com.opensymphony.xwork2" level="debug"/>
+        <Logger name="com.opensymphony.xwork2.util.LocalizedTextUtil" level="debug"/>
+        <Logger name="com.opensymphony.xwork2.util.TextProvider" level="debug"/>
         <Root level="warn">
             <AppenderRef ref="STDOUT"/>
         </Root>
