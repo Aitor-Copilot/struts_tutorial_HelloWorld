@@ -32,10 +32,26 @@
 
         <p><a href="register.action">Please register</a> for our prize drawing.</p>
 
-        <s:url action="registerInput" var="registerInputLink" />
-        <p><s:a href="%{registerInputLink}">Please register</s:a> for our prize drawing.</p>
+        <h3>Register in English</h3>
+        <s:url action="registerInput" var="registerInputLinkEN">
+            <s:param name="request_locale">en</s:param>
+        </s:url>
+        <p><s:a href="%{registerInputLinkEN}">Please register</s:a> for our prize drawing.</p>
 
-        <hr />
+        <h3>Registro español</h3>
+        <s:url action="registerInput" var="registerInputLinkES">
+            <s:param name="request_locale">es</s:param>
+        </s:url>
+        <p><s:a href="%{registerInputLinkES}">Por favor, regístrese</s:a> para nuestro sorteo</p>
+
+        <h3>Registre Français</h3>
+        <s:url action="registerInput" var="registerInputLinkFR">
+            <s:param name="request_locale">fr</s:param>
+        </s:url>
+        <p><s:a href="%{registerInputLinkFR}">S`il vous plait</s:a> enregistré pour notre concourse</p>
+
+        
+            <hr />
         <s:text name="contact" />
     </body>
 </html>
